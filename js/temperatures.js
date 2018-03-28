@@ -1,5 +1,6 @@
 /* ---------- Start of the program ---------- */
 
+
 // Declaration of the strict mode
 'use strict';
 
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	// Object with methods and properties
 	var temperatures = {
 
+
 		// Fahrenheit input
 		fahrenheit: document.getElementById('fahrenheit'),
 
@@ -17,6 +19,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		// Kelvin input
 		kelvin: document.getElementById('kelvin'),
+
+
 
 		// From fahrenheit to other measures method
 		fahrenheitCount: function() {
@@ -58,9 +62,11 @@ window.addEventListener('DOMContentLoaded', function() {
 		}
 	};
 
-
 	// Calling of the methods
 	temperatures.fahrenheitCount();
 	temperatures.celsiusCount();
 	temperatures.kelvinCount();
 });
+
+
+/* ---------- End of the program ---------- */

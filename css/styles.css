@@ -67,14 +67,9 @@ table {
   box-sizing: border-box; }
 
 .wrapper {
-  position: relative;
   /* Adding font and font-size to the page ----- */
   font-family: "GothamProRegular", Arial, sans-serif;
   font-size: 62.5%; }
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; }
 
 /* ---------- Main page ---------- */
 .link {
