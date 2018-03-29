@@ -6,7 +6,7 @@
 	______________________________________-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>Converter of the temperatures, masses, lengths, speeds and times</title>
+	<title>Converter of the temperatures, masses, lengths and speeds</title>
 
 
 	<!-- Meta
@@ -31,7 +31,7 @@
 	
 		<!-- Manifest.json
 		______________________________________-->
-		<link rel="manifest" href="js/manifest.json">
+		<link rel="manifest" href="js/scripts/manifest.json">
 
 		<!-- Common icons
 		______________________________________-->
@@ -59,7 +59,7 @@
 
 		<!-- Microsoft Tiles
 		______________________________________-->
-		<meta name="msapplication-config" content="js/browserconfig.xml">
+		<meta name="msapplication-config" content="js/scripts/browserconfig.xml">
 
 
 	<!-- CSS
@@ -71,6 +71,8 @@
 	______________________________________-->
 	<script src="js/temperatures.js"></script>
 	<script src="js/masses.js"></script>
+	<script src="js/lengths.js"></script>
+	<script src="js/speeds.js"></script>
 	<script src="js/page-scroll.js"></script>
 
 
@@ -82,7 +84,7 @@
 ______________________________________-->
 <section class="about">
 	<div class="title-wrap">
-		<h1 class="about__title">Converter of the temperatures, masses, lengths, speeds and times</h1>
+		<h1 class="about__title">Converter of the temperatures, masses, lengths and speeds</h1>
 		<h2 class="about__subtitle">Convert measures in some clicks</h2>
 		<a href="https://github.com/solntsevdaniil" target="_blank" class="link"><img src="css/img/github.png" class="img"></a>
 	</div>
@@ -142,25 +144,8 @@ ______________________________________-->
 		<h1 class="measure__title measure__title_text">Speed</h1>
 
 		<div class="inputs">
-			<input type="number" class="input input_geometry" id="mpr" placeholder="Meters per hour">
+			<input type="number" class="input input_geometry" id="mph" placeholder="Meters per hour">
 			<input type="number" class="input input_geometry" id="kph" placeholder="Kilometers per hour">
-		</div>
-	</section>
-</div>
-
-
-<div class="measure-wrap">
-	<section class="measure">
-		<h1 class="measure__title measure__title_text">Time</h1>
-
-		<div class="inputs">
-			<input type="number" class="input input_geometry" id="milliseconds" placeholder="Milliseconds">
-			<input type="number" class="input input_geometry" id="seconds" placeholder="Seconds">
-			<input type="number" class="input input_geometry" id="minutes" placeholder="Minutes">
-			<input type="number" class="input input_geometry" id="hours" placeholder="Hours">
-			<input type="number" class="input input_geometry" id="days" placeholder="Days">	
-			<input type="number" class="input input_geometry" id="weeks" placeholder="Weeks">
-			<input type="number" class="input input_geometry" id="years" placeholder="Years">
 		</div>
 	</section>
 </div>

@@ -1,5 +1,6 @@
 /* ---------- Start of the program ---------- */
 
+
 // Declaration of the strict mode
 'use strict';
 
@@ -7,103 +8,85 @@
 window.addEventListener('DOMContentLoaded', function() {
 
 	// Object with methods and properties
-	var mass = {
+	var masses = {
 
-		// Grams input
+		// Inputs
 		grams: document.getElementById('grams'),
-
-		// Kilograms input
 		kilograms: document.getElementById('kilograms'),
-
-		// Pounds input
 		pounds: document.getElementById('pounds'),
-
-		// Ounces input
 		ounces: document.getElementById('ounces'),
-
-		// Stones input
 		stones: document.getElementById('stones'),
 
-
-
-		// From grams to the other measures
+		// Formulas - from one measure to other measure
 		gramsCount: function() {
 			this.grams.addEventListener('input', function() {
+
+				// From String to the Number
 				var num = parseFloat(this.value);
-				mass.kilograms.value = num / 1000;
-				mass.pounds.value = num * 0.0022046
-				mass.ounces.value = num * 0.035274;
-				mass.stones.value = num * 0.00015747;
+
+				// Counting
+				masses.kilograms.value = num / 1000;
+				masses.pounds.value = num * 0.0022046
+				masses.ounces.value = num * 0.035274;
+				masses.stones.value = num * 0.00015747;
 			});
 		},
 
-		// From kilograms to the other measures
 		kilogramsCount: function() {
 			this.kilograms.addEventListener('input', function() {
 
-				// From String to the Number
 				var num = parseFloat(this.value);
 
-				// Formulas
-				mass.grams.value = num * 1000;
-				mass.pounds.value = num * 2.2046;
-				mass.ounces.value = num * 35.274;
-				mass.stones.value = num * 0.1574;
+				masses.grams.value = num * 1000;
+				masses.pounds.value = num * 2.2046;
+				masses.ounces.value = num * 35.274;
+				masses.stones.value = num * 0.1574;
 			});
 		},
 
-		// From pounds to the other measures
 		poundsCount: function() {
 			this.pounds.addEventListener('input', function() {
 
-				// From String to the Number
 				var num = parseFloat(this.value);
 
-				// Formulas
-				mass.grams.value = num / 0.0022046;
-				mass.kilograms.value = num / 2.2046;
-				mass.ounces.value = num * 16;
-				mass.stones.value = num * 0.071429;
+				masses.grams.value = num / 0.0022046;
+				masses.kilograms.value = num / 2.2046;
+				masses.ounces.value = num * 16;
+				masses.stones.value = num * 0.071429;
 			});
 		},
 
-		// From ounces to the other measures
 		ouncesCount: function() {
 			this.ounces.addEventListener('input', function() {
 
-				// From String to the Number
 				var num = parseFloat(this.value);
 
-				// Formulas
-				mass.grams.value = num / 0.035274;
-				mass.kilograms.value = num / 35.274;
-				mass.pounds.value = num * 0.0625;
-				mass.stones.value = num * 0.0044643;
+				masses.grams.value = num / 0.035274;
+				masses.kilograms.value = num / 35.274;
+				masses.pounds.value = num * 0.0625;
+				masses.stones.value = num * 0.0044643;
 			});
 		},
 
-		// From stones to the other measures
 		stonesCount: function() {
 			this.stones.addEventListener('input', function() {
 
-				// From String to the Number
 				var num = parseFloat(this.value);
 
-				// Formulas
-				mass.grams.value = num / 0.00015747;
-				mass.kilograms.value = num / 0.15747;
-				mass.pounds.value = num * 14;
-				mass.ounces.value = num * 224;
+				masses.grams.value = num / 0.00015747;
+				masses.kilograms.value = num / 0.15747;
+				masses.pounds.value = num * 14;
+				masses.ounces.value = num * 224;
 			});
 		}
 	};
 
-	// Calling of the methods
-	mass.gramsCount();
-	mass.kilogramsCount();
-	mass.poundsCount();
-	mass.ouncesCount();
-	mass.stonesCount();
+	// Counting methods calling
+	masses.gramsCount();
+	masses.kilogramsCount();
+	masses.poundsCount();
+	masses.ouncesCount();
+	masses.stonesCount();
 });
 
 
